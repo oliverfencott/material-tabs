@@ -67,11 +67,13 @@ render: function() {
 },
 
 handleChange: function(index) {
-  console.log(index); <!----> 1
+  console.log(index); // 1
 }
 ```
 
-It also accept a ```defaultSelectedTab``` prop which expects the index of the tab to be selected on initial render, which by default is of course ```js 0```.
+It also accept a ```defaultSelectedTab``` prop which expects the index of the tab to be selected on initial render, which by default is of course ```0```. This is useful when persisting the currently selected tab across different routes.
+
+Because the ```TabGroup``` component only cares about how many children it has (as opposed to what the children actually are), it's very easy to use the ```Tab```s as links (with, for example, the very excellent and highly recommended [React-router](https://github.com/rackt/react-router)).
 
 #### Tab
 

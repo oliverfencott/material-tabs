@@ -6,6 +6,10 @@
 npm install --save material-tabs
 ```
 
+## Example
+
+[demo](https://i.gyazo.com/15c7deec2213018a1e6e6fc926bcb646.gif)
+
 ### Components
 
 The package provides 2 components: Tab and TabGroup, used together like so:
@@ -73,7 +77,28 @@ handleChange: function(index) {
 
 It also accept a ```defaultSelectedTab``` prop which expects the index of the tab to be selected on initial render, which by default is of course ```0```. This is useful when persisting the currently selected tab across different routes.
 
-Because the ```TabGroup``` component only cares about how many children it has (as opposed to what the children actually are), it's very easy to use the ```Tab```s as links (with, for example, the very excellent and highly recommended [React-router](https://github.com/rackt/react-router)).
+Because the ```TabGroup``` component only cares about how many children it has (as opposed to what the children actually are), it's very easy to use the ```Tab```s as links (with, for example, the very excellent and highly recommended [React-router](https://github.com/rackt/react-router)). For example:
+
+```js
+render: function() {
+  return (
+    <TabGroup>
+      <Link to='home'>
+        <Tab>
+          Home
+        </Tab>
+      </Link>
+      <Link to='favourites'>
+        <Tab>
+          Favourites
+        </Tab>
+      </Link>
+    </TabGroup>
+  );
+}
+```
+
+will render exactly the same without links (save for default link styling).
 
 #### Tab
 

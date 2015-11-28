@@ -5,8 +5,8 @@
   "main": "lib",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon main.js",
-    "foo": "babel --presets es2015,react --watch src/ --out-dir lib/"
+    "dev": "babel --presets es2015,react --watch src/ --out-dir lib/",
+    "prepublish": "babel --presets es2015,react src/ --out-dir lib/"
   },
   "repository": {
     "type": "git",

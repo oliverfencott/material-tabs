@@ -2,21 +2,29 @@
 
 ## What is it?
 
+
 A simple React package that provides the Material Design tab component.
+
 
 This is what they look like:
 
+
 ![demo](https://i.gyazo.com/15c7deec2213018a1e6e6fc926bcb646.gif)
+
 
 Gifs, because open source, because Internet.
 
+
 ## Get started
+
 
 ```
 npm install --save material-tabs
 ```
 
+
 ## Example
+
 
 The code in the above example looks like: 
 
@@ -62,11 +70,11 @@ const Layout = React.createClass({
     });
   }
 });
-
-
 ```
 
+
 ### Components
+
 
 The package provides 2 components: Tab and TabGroup, used together like so:
 
@@ -89,6 +97,7 @@ const NavigationTabs = React.createClass({
 )};
 ```
 
+
 The following aspects are determined as a result of the number of children ```TabGroup``` has:
 
 - The position of the indicator (underline), highlighting which tab was clicked and
@@ -96,7 +105,9 @@ The following aspects are determined as a result of the number of children ```Ta
 
 Meaning each Tab will always be identical in width.
 
+
 #### TabGroup
+
 
 By default, the following styles are applied:
 
@@ -110,7 +121,9 @@ By default, the following styles are applied:
 style={ indicator: { color: '#FF5722' } }
 ```
 
+
 ```TabGroup``` accepts an ```onChangeTab``` prop which passes the index of the newly selected ```Tab``` back up, used like so:
+
 
 ```js
 render: function() {
@@ -133,7 +146,9 @@ handleChange: function(index) {
 
 It also accept a ```defaultSelectedTab``` prop which expects the index of the tab to be selected on initial render, which by default is of course ```0```. This is useful when persisting the currently selected tab across different routes.
 
+
 Because the ```TabGroup``` component only cares about how many children it has (as opposed to what the children actually are), it's very easy to use the ```Tab```s as links (with, for example, the very excellent and highly recommended [React-router](https://github.com/rackt/react-router)). For example:
+
 
 ```js
 render: function() {
@@ -156,7 +171,9 @@ render: function() {
 
 will render exactly the same without links (save for default link styling).
 
+
 #### Tab
+
 
 By default, the following styles are applied:
 
@@ -172,7 +189,9 @@ All other styles follow the [spec](https://www.google.com/design/spec/components
 style={ color: '#FF5722' }
 ```
 
+
 ```Tab``` accepts a regular ```onClick``` prop as you would expect.
+
 
 ### Todo
 - Add support for [icons with text](https://www.google.com/design/spec/components/tabs.html#tabs-specs)

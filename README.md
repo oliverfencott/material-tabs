@@ -1,5 +1,15 @@
 # material-tabs
 
+## What is it?
+
+A simple React package that provides the Material Design tab component.
+
+This is what they look like:
+
+![demo](https://i.gyazo.com/15c7deec2213018a1e6e6fc926bcb646.gif)
+
+Gifs, because open source, because Internet.
+
 ## Get started
 
 ```
@@ -8,7 +18,53 @@ npm install --save material-tabs
 
 ## Example
 
-![demo](https://i.gyazo.com/15c7deec2213018a1e6e6fc926bcb646.gif)
+The code in the above example looks like: 
+
+```js
+
+import {TabGroup, Tab} from 'material-tabs';
+
+const tabs = [
+  {linkTo: 'dashboard', label: 'Dashboard'},
+  {linkTo: 'downloads', label: 'Downloads'},
+  {linkTo: 'uploads', label: 'Uploads'},
+  {linkTo: 'totalStats', label: 'Stats'},
+  {linkTo: 'account', label: 'Account'}
+];
+
+const Layout = React.createClass({
+  render: function() {
+    return (
+      <div>
+        <div style={{backgroundColor: '#212121'}}>
+          <div style={{width: 700}}>
+            <TabGroup style={{indicator: {color: '#2196f3'}}}>
+              {this.renderTabs()}
+            </TabGroup>
+          </div>
+        </div>
+      
+      // Rest of layout
+      
+      </div>
+    );
+  },
+  
+  renderTabs: function() {
+    return tabs.map((tab, index) => {
+      return (
+        <UnstyledLink to={tab.linkTo} key={index}>
+          <Tab>
+            {tab.label}
+          </Tab>
+        </UnstyledLink>
+      );
+    });
+  }
+});
+
+
+```
 
 ### Components
 

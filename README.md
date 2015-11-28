@@ -8,7 +8,7 @@ npm install --save material-tabs
 
 ## Example
 
-[demo](https://i.gyazo.com/15c7deec2213018a1e6e6fc926bcb646.gif)
+![demo](https://i.gyazo.com/15c7deec2213018a1e6e6fc926bcb646.gif)
 
 ### Components
 

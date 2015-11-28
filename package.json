@@ -1,0 +1,24 @@
+{
+  "name": "material-tabs",
+  "version": "0.0.0",
+  "description": "",
+  "main": "lib",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon main.js",
+    "foo": "babel --presets es2015,react --watch src/ --out-dir lib/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oliverfencott/material-tabs.git"
+  },
+  "author": "Oliver Fencott <oliverfencott@gmail.com> (http://fencott.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oliverfencott/material-tabs/issues"
+  },
+  "homepage": "https://github.com/oliverfencott/material-tabs#readme",
+  "dependencies": {
+    "react": "^0.14.3"
+  }
+}

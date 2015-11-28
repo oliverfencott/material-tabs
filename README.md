@@ -45,7 +45,7 @@ By default, the following styles are applied:
 - Unselected ```Tab```s are the same color, with an opacity of 0.7 applied,
 - Background colors are default (inherit).
 
-All other styles follow the [https://www.google.com/design/spec/components/tabs.html#tabs-specs][spec], such as text styling, spacing, heights, and animation.
+All other styles follow the [spec][https://www.google.com/design/spec/components/tabs.html#tabs-specs], such as text styling, spacing, heights, and animation.
 
 ```TabGroup``` accepts the following style prop:
 
@@ -56,5 +56,5 @@ indicator: {
 ```
 
 ### Todo
-- Add support for [https://www.google.com/design/spec/components/tabs.html#tabs-specs][icons with text]
+- Add support for [icons with text][https://www.google.com/design/spec/components/tabs.html#tabs-specs]
 - Add touch animations

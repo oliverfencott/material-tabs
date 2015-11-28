@@ -1,6 +1,6 @@
 'use strict';
 
-import React from 'react/addons';
+import React from 'react';
 
 import TabIndicator from './TabIndicator';
 
@@ -30,7 +30,8 @@ const TabGroup = React.createClass({
       onChangeTab: () => {},
       style: {
         indicator: {}
-      }
+      },
+      children: []
     };
   },
 

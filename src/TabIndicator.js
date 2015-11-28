@@ -1,6 +1,6 @@
 'use strict';
 
-import React from 'react/addons';
+import React from 'react';
 
 const Transition = 'all 250ms cubic-bezier(0.23, 1, 0.32, 1) 0ms';
 

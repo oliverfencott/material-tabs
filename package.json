@@ -1,7 +1,7 @@
 {
   "name": "material-tabs",
-  "version": "0.0.1",
-  "description": "",
+  "version": "0.0.5",
+  "description": "A simple React package that provides the Material Design tab component.",
   "main": "lib",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -17,6 +17,14 @@
   "bugs": {
     "url": "https://github.com/oliverfencott/material-tabs/issues"
   },
+  "keywords": [
+    "JavaScript",
+    "React",
+    "react-component",
+    "Material",
+    "Design",
+    "Tabs"
+  ],
   "homepage": "https://github.com/oliverfencott/material-tabs#readme",
   "dependencies": {
     "react": "^0.13.3"

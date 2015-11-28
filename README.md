@@ -26,7 +26,7 @@ npm install --save material-tabs
 ## Example
 
 
-The code in the above example looks like: 
+The code in the above example looks like:
 
 ```js
 
@@ -51,13 +51,13 @@ const Layout = React.createClass({
             </TabGroup>
           </div>
         </div>
-      
+
       // Rest of layout
-      
+
       </div>
     );
   },
-  
+
   renderTabs: function() {
     return tabs.map((tab, index) => {
       return (
@@ -144,10 +144,10 @@ handleChange: function(index) {
 }
 ```
 
-It also accept a ```defaultSelectedTab``` prop which expects the index of the tab to be selected on initial render, which by default is of course ```0```. This is useful when persisting the currently selected tab across different routes.
+It also accepts a ```defaultSelectedTab``` prop, which should be the index of the tab to be selected on initial render, which by default is of course ```0```. This would be used to make sure the correct tab is selected when arriving from an external link.
 
 
-Because the ```TabGroup``` component only cares about how many children it has (as opposed to what the children actually are), it's very easy to use the ```Tab```s as links (with, for example, the very excellent and highly recommended [React-router](https://github.com/rackt/react-router)). For example:
+Because the ```TabGroup``` component only cares about how many children it has (as opposed to what the children are), it's very easy to use the ```Tab```s nested inside links (such as when using the very excellent and highly recommended [React-router](https://github.com/rackt/react-router)). For example:
 
 
 ```js

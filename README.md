@@ -1,14 +1,14 @@
 # material-tabs
 
-### Get started
+#### Get started
 
 ```
 npm install --save material-tabs
 ```
 
-### How it works
+#### How it works
 
-## Components
+### Components
 
 The package provides 2 components: Tab and TabGroup, used together like so:
 
@@ -38,21 +38,34 @@ The following aspects are determined as a result of the number of children ```Ta
 
 Meaning each Tab will always be identical in width.
 
+## TabGroup
+
 By default, the following styles are applied:
 
 - ```TabGroup``` is 100% width of it's parent,
-- The indicator and currently selected ```Tab``` are #FFFFFF (white),
+- The indicator is #FFFFFF (white).
+- Background colors are default (inherit).
+
+```TabGroup``` accepts the following style prop:
+
+```js
+style={ indicator: { color: '#FF5722' } }
+```
+
+## Tab
+
+By default, the following styles are applied:
+
+- The currently selected ```Tab``` text color is #FFFFFF (white),
 - Unselected ```Tab```s are the same color, with an opacity of 0.7 applied,
 - Background colors are default (inherit).
 
 All other styles follow the [spec](https://www.google.com/design/spec/components/tabs.html#tabs-specs), such as text styling, spacing, heights, and animation.
 
-```TabGroup``` accepts the following style prop:
+```Tab``` accepts the following style prop:
 
-```
-indicator: {
-  color: '#FF5722'
-}
+```js
+style={ color: '#FF5722' }
 ```
 
 ### Todo

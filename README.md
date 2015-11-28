@@ -36,7 +36,7 @@ The following aspects are determined as a result of the number of children ```Ta
 
 Meaning each Tab will always be identical in width.
 
-### TabGroup
+#### TabGroup
 
 By default, the following styles are applied:
 
@@ -50,7 +50,30 @@ By default, the following styles are applied:
 style={ indicator: { color: '#FF5722' } }
 ```
 
-### Tab
+```TabGroup``` accepts an ```onChangeTab``` prop which passes the index of the newly selected ```Tab``` back up, used like so:
+
+```js
+render: function() {
+  return (
+    <TabGroup onChangeTab={this.handleChange}>
+      <Tab>
+        One
+      </Tab>
+      <Tab>
+        Two
+      </Tab>
+    </TabGroup>
+  );
+},
+
+handleChange: function(index) {
+  console.log(index); <!----> 1
+}
+```
+
+It also accept a ```defaultSelectedTab``` prop which expects the index of the tab to be selected on initial render, which by default is of course ```js 0```.
+
+#### Tab
 
 By default, the following styles are applied:
 
@@ -65,6 +88,8 @@ All other styles follow the [spec](https://www.google.com/design/spec/components
 ```js
 style={ color: '#FF5722' }
 ```
+
+```Tab``` accepts a regular ```onClick``` prop as you would expect.
 
 ### Todo
 - Add support for [icons with text](https://www.google.com/design/spec/components/tabs.html#tabs-specs)

@@ -1,12 +1,10 @@
 # material-tabs
 
-#### Get started
+## Get started
 
 ```
 npm install --save material-tabs
 ```
-
-#### How it works
 
 ### Components
 
@@ -38,7 +36,7 @@ The following aspects are determined as a result of the number of children ```Ta
 
 Meaning each Tab will always be identical in width.
 
-## TabGroup
+### TabGroup
 
 By default, the following styles are applied:
 
@@ -52,7 +50,7 @@ By default, the following styles are applied:
 style={ indicator: { color: '#FF5722' } }
 ```
 
-## Tab
+### Tab
 
 By default, the following styles are applied:
 

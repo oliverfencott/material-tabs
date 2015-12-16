@@ -118,7 +118,7 @@ By default, the following styles are applied:
 ```TabGroup``` accepts the following style prop:
 
 ```js
-style={ indicator: { color: '#FF5722' } }
+style={{ indicator: { color: '#FF5722' } }}
 ```
 
 
@@ -186,7 +186,7 @@ All other styles follow the [spec](https://www.google.com/design/spec/components
 ```Tab``` accepts the following style prop:
 
 ```js
-style={ color: '#FF5722' }
+style={{ color: '#FF5722' }}
 ```
 
 

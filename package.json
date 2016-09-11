@@ -1,6 +1,6 @@
 {
   "name": "material-tabs",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A simple React package that provides the Material Design tab component.",
   "main": "lib",
   "scripts": {

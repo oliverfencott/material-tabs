@@ -26,7 +26,12 @@
     "Tabs"
   ],
   "homepage": "https://github.com/oliverfencott/material-tabs#readme",
-  "dependencies": {
-    "react": "^0.13.3"
+  "peerDependencies": {
+    "react": "*"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-react": "^6.11.1",
+    "react": "*"
   }
 }

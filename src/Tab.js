@@ -17,14 +17,17 @@ const Tab = React.createClass({
       container: {
         position: 'relative',
         height: 48,
-        padding: '0 12px',
+        padding: 0,
         cursor: 'pointer'
       },
       text: {
         container: {
           position: 'relative',
-          top: '50%',
-          transform: 'translateY(-60%)',
+          height: '100%',
+          width: '100%',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
           textAlign: 'center',
           textTransform: 'uppercase',
           color: style.color || '#FFFFFF',
